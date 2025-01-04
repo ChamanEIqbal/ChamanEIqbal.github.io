@@ -17,6 +17,63 @@
         opacity: 1;
         transform: translateY(0);
       }
+      @media screen and (max-width: 768px) {
+        .container-header {
+          flex-direction: column;
+          text-align: center;
+        }
+        .header h1 {
+          font-size: 2rem;
+        }
+        .name p {
+          font-size: 1rem;
+        }
+        .tags {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        .tag {
+          margin: 0.5em;
+        }
+        .about-me-container {
+          flex-direction: column;
+          text-align: center;
+        }
+        .about-me {
+          flex-direction: column;
+          gap: 1rem;
+        }
+        .profile-pic {
+          width: 100px;
+          height: 100px;
+        }
+        .about-me-text h2 {
+          font-size: 1.5rem;
+        }
+        .about-me-text p {
+          font-size: 0.9rem;
+        }
+        .simple-container {
+          padding: 1rem;
+        }
+        .simple-text ul {
+          padding: 0;
+        }
+        .simple-text li {
+          margin: 0.5rem;
+        }
+        .container-footer {
+          padding: 1rem;
+        }
+        .footer {
+          flex-direction: column;
+          text-align: center;
+        }
+        .footer p {
+          margin: 0.5rem;
+        }
+      }
     </style>
   </head>
   <body>
