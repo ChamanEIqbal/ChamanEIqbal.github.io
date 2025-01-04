@@ -96,17 +96,18 @@
   }
   
   /* Responsive Design */
-  @media screen and (max-width: 768px) {
+  
+  @media screen and (max-width: 600px) {
     .header h1 {
-      font-size: 2rem;
+      font-size: 1.69rem;
     }
   
     .name p {
-      font-size: 1rem;
+      font-size: 0.54rem;
     }
   
     .tag {
-      font-size: 0.8rem;
+      font-size: 0.3rem;
     }
   }
   
@@ -152,13 +153,13 @@
   
   .simple-text p {
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.2;
     color: #f0f0f0;
   }
 
   .simple-text ul > li > strong {
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.2;
     color: lightgreen;
   }
 
@@ -236,5 +237,28 @@
   
     .about-me-text p {
       font-size: 0.9rem;
+    }
+
+    simple-text h2 {
+        font-size: 1.5rem;
+    }
+    simple-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .simple-text p {
+        font-size: 0.9rem;
+    }
+    .simple-text p strong {
+        font-size: 0.9rem;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .container-footer {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      font-size:7.5px;
     }
   }
