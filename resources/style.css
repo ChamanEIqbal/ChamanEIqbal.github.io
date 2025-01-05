@@ -14,7 +14,10 @@
   
   /* Header Container */
   .container-header {
-    background: rgba(36, 0, 81, 0.9);
+    background-color: #330066;
+    opacity: 0.8;
+    background-image: radial-gradient(circle at center center, #006a4e, #330066), repeating-radial-gradient(circle at center center, #006a4e, #006a4e, 40px, transparent 80px, transparent 40px);
+    background-blend-mode: multiply;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -94,7 +97,7 @@
   /* Tag Hover Effect */
   .tag:hover {
     transform: scale(1.1);
-    background: linear-gradient(135deg, #ff5722, #e91e63);
+    background: linear-gradient(135deg, #000, #000);
   }
   
   /* Responsive Design */
@@ -148,7 +151,7 @@
 
   .simple-text h3 {
     font-size: 1.3rem;
-    color: lightgreen;
+    color: #80ee80;
     margin-bottom: 0.5rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   }
@@ -162,7 +165,7 @@
   .simple-text ul > li > strong {
     font-size: 1rem;
     line-height: 1.2;
-    color: lightgreen;
+    color: #80ee80;
   }
 
   .simple-text ul > li > a {
@@ -188,7 +191,7 @@
   
   .about-me-text h2 {
     font-size: 1.8rem;
-    color: lightgreen;
+    color: #80ee80;
     margin-bottom: 0.5rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   }
@@ -201,7 +204,7 @@
   .about-me-text p b {
     font-size: 1rem;
     line-height: 1.6;
-    color: lightgreen;
+    color: #80ee80;
   }
   
   /* Fade-in Animation */
@@ -262,5 +265,84 @@
       max-width: 600px;
       margin: 0 auto;
       font-size:7.5px;
+    }
+  }
+
+  .link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .link-container a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .link-container a:hover {
+    color: #64dd17; 
+  }
+
+  @media (max-width: 600px) {
+    .link-container {
+      flex-direction: row;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+  
+    .link-container a {
+      font-size: 1.2rem; /* Slightly smaller icons for small screens */
+    }
+  }
+  
+  .resume-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .resume-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .resume-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #006a4e; /* Green background */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .resume-button:hover {
+    background-color: #000; /* Darker green on hover */
+    transform: scale(1.05);
+  }
+  
+  .resume-button i {
+    font-size: 1.2rem;
+  }
+  
+  @media (max-width: 600px) {
+    .resume-container {
+      margin-top: 10px;
+    }
+  
+    .resume-button {
+      font-size: 0.9rem;
+    }
+  
+    .resume-button i {
+      font-size: 1rem;
     }
   }
