@@ -7,7 +7,20 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="resources/style.css" />
     <link rel="icon" href="resources/page-icon.png" type="image/png" />
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    rel="stylesheet"
+  />
     <style>
+      a i {
+        color: white;
+        transition: color 0.3s ease;
+      }
+
+      a i:hover {
+        color: #64dd17; /* Changes to green on hover */
+      }
+
       .fade-in {
         opacity: 0;
         transform: translateY(20px);
@@ -166,13 +179,34 @@
       </div>
     </div>
 
-    <div class="container-footer" style="background-color: #240051; color:#008000;">
+    <div class="container-footer" style="background-color: #240051; color: #008000;">
       <div class="footer" style="display: flex; justify-content: space-between;">
-        <p style="color:#64dd17;"><strong>Chaman E Iqbal -- 2025</strong></p>
-        <p style="text-align: right; color: #64dd17;"><strong>Discord:</strong> <span style="color: white;">@mustardface</span></p>
-        <p style="text-align: right; color: #64dd17;"><strong>Email:</strong> <span style="color: white;">pc19232.mustafa@gmail.com</span></p>
+        <p style="color: #64dd17;">
+          <strong style="color: white;">Chaman E Iqbal -- </strong>2025
+        </p>
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <a href="https://discord.com/users/265775970345025536" target="_blank">
+            <i class="fab fa-discord fa-lg"></i>
+          </a>
+          <a href="mailto:pc19232.mustafa@gmail.com" target="_blank">
+            <i class="fas fa-envelope fa-lg"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/mustafa-ahmed-khan-54648b2a6/" target="_blank">
+            <i class="fab fa-linkedin fa-lg"></i>
+          </a>
+          <a href="https://www.instagram.com/6mustafakhan9/" target="_blank">
+            <i class="fab fa-instagram fa-lg"></i>
+          </a>
+        </div>
+        <p style="text-align: right; color: #64dd17;">
+          <strong>Discord:</strong> <span style="color: white;">@mustardface</span>
+        </p>
+        <p style="text-align: right; color: #64dd17;">
+          <strong>Email:</strong> <span style="color: white;">pc19232.mustafa@gmail.com</span>
+        </p>
       </div>
     </div>
+
       
     <script>
       function handleScroll() {
@@ -193,4 +227,3 @@
     </script>
   </body>
 </html>
-
